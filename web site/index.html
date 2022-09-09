@@ -1,0 +1,306 @@
+ <html>
+    <head>
+
+        <title>DC_Graphics</title> 
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                background-image: url(images/broken\ bigben.jpg);
+                background-size: cover;
+                background-position-y: 200px;
+                background-attachment: fixed;
+            }
+            .nav-logo {
+                height: 60px;
+                margin-left: 50%;
+                margin-right: 5%;
+            }
+            .nav-link {
+                font-size: 18px;
+                margin-right: 100%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            @media only screen and (max-width: 600px) {
+                .nav-link {
+                    margin-top: 0%;
+                    margin-bottom: 0%;
+                }
+            }
+            .navbar-nav {
+                margin-left: 5%;
+            }
+            .nav-link:hover {
+                color: rgb(252, 176, 42);
+            }
+            .home:hover {
+                border-bottom: solid rgb(252, 176, 42);
+                border-top: solid rgb(252, 176, 42);
+            }
+            .gallery:hover {
+                border-bottom: solid rgb(252, 176, 42);
+                border-top: solid rgb(252, 176, 42);
+            }
+            .contact:hover {
+                border-bottom: solid rgb(252, 176, 42);
+                border-top: solid rgb(252, 176, 42);
+            }
+            .navbar-nav {
+                margin-right: 15%;
+            }
+            .social {
+                height: 20px;
+                margin: 0% 10px 0% 10px;
+                
+            }
+            .social-r {
+                margin-right: 0%;
+            }
+            .insta:hover {
+                height: 25px;
+            }
+            .realize-t {
+                color: rgb(252, 176, 42);
+                font-size: 85px;
+                text-align: center;
+            }
+            .intro-1 {
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                font-style: italic;
+                font-weight: 900;
+            }
+            .top {
+                background-image: url(images/fantasy\ background.jpg);
+                background-size: cover;
+            }
+            .text {
+                padding-top: 4%;
+                padding-bottom: 3%;
+                background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1));
+            }
+            .intro-p {
+                color: white;
+                font-size: 18px;
+                text-align: center;
+            }
+            @media only screen and (max-width: 600px) {
+                .text {
+                    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));
+                }
+            }
+            @media only screen and (min-width: 600px) {
+                .text {
+                    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0));
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                .text {
+                    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+                } 
+            }
+            .navbar-toggler {
+                float: right;
+            }
+            .my_arts {
+                display: none;
+            }
+            @media only screen and (min-width: 1000px) {
+                .my_arts {
+                    display: flex;
+                }
+            }
+            .social:hover {
+                background-color:rgb(252, 176, 42);
+            }
+            .saying {
+                margin: 2% 0% 2% 0%;
+                color: white;
+                text-align: center;
+                padding: 5% 0% 5% 0%;
+                background-color: rgb(45, 45, 45, 0.9);
+            }
+            .photo-m {
+                font-size: 50px;
+                color:rgb(252, 176, 42);
+                text-align: center;
+                margin-bottom: 5%;
+            }   
+            .arts {
+                height: 400px;
+            }  
+            .arts-nature {
+                height: 320px;
+            }
+            .view-all_button {
+                text-align: center;
+                
+            }
+            hr.dashed {
+                border-top: 5px dashed rgb(252, 176, 42);
+            }
+            .services {
+                margin-top: 50px;
+                color:rgb(252, 176, 42);
+                font-size:50px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .a2d {
+                height: 300px;
+                margin: 5px;
+            }
+            @media only screen and (max-width: 600px) {
+                .a2d {
+                    height: 200px;
+                }
+            }
+            footer {
+                color: rgb(186, 186, 186);
+            }
+            .social-footer {
+                height: 20px;
+                margin-left: 10px;
+            }
+            .social-footer:hover {
+                background-color:rgb(252, 176, 42);
+            }
+            .end {
+                background-color: rgb(58, 58, 58);
+                padding: 20px;
+                margin-bottom: 10px;
+                opacity: 0.3;
+                margin-left: 0%;
+            }
+            footer {
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+            <a href="" class="navbar-brand"><img src="images/logo-white.png" alt="logo" class="nav-logo"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#id01"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-center" id="id01">
+                <ul class="navbar-nav">
+                    <li class="nav-item home"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item gallery"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item contact"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item contact"><a href="About.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="social-g">
+                    <a href="https://www.instagram.com/dc_steller_graphics/"><img src="images/Background.png" class="social" alt=""></a> 
+                    <a href="https://www.instagram.com/dc_steller_graphics/"><img src="images/artstation logo.png" class="social" alt=""></a>
+                    <a href="https://www.fiverr.com/dc_graphics_sl"><img src="images/fiverr logo.png" class="social" alt=""></a>
+                </div>
+            </div>
+            
+         
+        </nav>
+
+        <div class="container-fluid top">
+            <div class="row">
+                <div class="col-0 col-md-6">
+                    <img src="images/my arts.png" alt="my arts" class="my_arts">
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 text ">
+                    <h1 class="realize-t">Realize Your Dreams</h1>
+                    <h4 class="intro-1">Creativity & Photo Manipulation</h4> <br>
+                    <p class="intro-p" style="font-size:20px;">
+                        Welcome to the World of imagination!
+                    </p>
+                    <p class="intro-p">Way to realize your imagination is called Photo Manipulation. 
+                        Theres no limit for Photo Manipulations and the only thing you need is 
+                        Creativity. Everything is possible with Photo Manipulation & anything which 
+                        can't be done in real world can easily done in Photo Manipulation World
+                    </p> <br>
+                </div>
+            </div>    
+        </div>
+
+        <div class="container-fluid saying_g">
+            <h3 class="saying">"Magic is just a illusion while you manipulate it"</h3>
+        </div>
+
+        <div class="container-fluid recent-g bg-dark">
+            <h1 class="photo-m col-12">Photo Manipulations</h1>
+            <div class="row">
+                <div class="col-12 col-md-6" style="margin-bottom:40px;">
+                    <img src="images/Traveling Bird.jpg" alt=" Traveling bird" class="arts mx-auto d-block"> 
+                    <h4 style="color:white; text-align: center; margin-top: 15px;">Travling Bird</h4>
+                </div>
+
+                <div class="col-12 col-md-6" style="margin-bottom:40px;">
+                    <img src="images/pigeon mail serive.jpg" alt="pigeon mail serive" class="arts mx-auto d-block">
+                    <h4 style="color:white; text-align: center; margin-top: 15px;">Pigeon Mail Service</h4>
+                </div>
+
+                <div class="col-12 col-md-6" style="margin-bottom:40px;">
+                    <img src="images/fantasy fly.jpg" alt="pigeon mail serive" class="arts mx-auto d-block">
+                    <h4 style="color:white; text-align: center; margin-top: 15px;">Dream Flight</h4>
+                </div>
+
+                <div class="col-12 col-md-6" style="margin-bottom:40px;">
+                    <img src="images/Portal of the nature.jpg" alt="pigeon mail serive" class="arts-nature mx-auto d-block">
+                    <h4 style="color:white; text-align: center; margin-top: 15px;">Mother Nature</h4>
+                </div>
+            </div>
+            <div class="col-12 view-all_button">
+                <a href="tabs/gallery.html" class="btn btn-warning">View all Artworks</a>
+            </div> 
+            <hr class="dashed">
+
+           <div class="container-fluid" >
+                <h1 class="services">Graphics & 2D</h1>
+                <div class="row" style="margin-bottom:50px;">
+
+                    <div class="col-6 col-lg-3">
+                        <img src="images/mihintale.jpg" alt="" class="a2d mx-auto d-block">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img src="images/mihintale 2.jpg" alt="" class="a2d mx-auto d-block">
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <img src="images/2D 02.jpg" alt="" class="a2d mx-auto d-block">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img src="images/2D 01.jpg" alt="" class="a2d mx-auto d-block">
+                    </div>
+           </div>
+           <hr class="dashed">
+           
+           <div class="end container-fluid">
+
+           </div>
+
+
+           <footer>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="https://www.artstation.com/dc_steller_graphics" target="_blank"><img src="images/artstation logo.png" alt="" class="social-footer"></a>
+                        <a href="https://www.instagram.com/dc_steller_graphics/" target="_blank"><img src="images/Background.png" alt="" class="social-footer"></a>
+                        <a href="https://www.fiverr.com/dc_graphics_sl?public_mode=true" target="_blank"><img src="images/fiverr logo.png" alt="" class="social-footer"></a>
+                        <a href="https://twitter.com/DC_Graphics_SL" target="_blank"><img src="images/twitter logo.png" alt="" class="social-footer"></a>
+                    </div> <br><br>
+                </div>
+                <p class="justify-content-center">copyright &copy; Dulen Wickramanayaka</p>
+           </footer>
+           <br>
+    </body>
+    
+</html>
